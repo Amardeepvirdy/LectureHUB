@@ -5,8 +5,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 import datetime
-import databaseconnection
-import sentiment_analysis
+from lecture_review_app import databaseconnection
+from lecture_review_app import sentiment_analysis
 import ast
 
 engine = databaseconnection.initialize()
